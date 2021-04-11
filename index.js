@@ -3,9 +3,21 @@ import express from 'express'
 import bodyParser from 'body-parser'
 import cors from 'cors'
 import mongoose  from 'mongoose';
+import postRoutes from './routes/posts.js'
+
 
 const app = express();
 const PORT = process.env.PORT || 3000
+
+
+
+// Routes
+// This router makes it so all posts in the posts.js file start with the url /posts
+app.use('/posts', postRoutes)
+
+
+
+
 
 // limit: 30m is to limit the size of images that we will be sending
 app.use(bodyParser.json({ limit: '30mb', extended: true }))
