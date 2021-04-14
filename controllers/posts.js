@@ -17,6 +17,7 @@ export const getPosts = async (req, res) => {
 
 
 export const createPosts = async (req, res) => {
+    // A frontend form is required in order to have a req.body
     const post = req.body
 
     const newPost = new PostMessage(post)
