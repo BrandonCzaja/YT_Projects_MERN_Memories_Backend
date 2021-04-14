@@ -13,6 +13,7 @@ const PORT = process.env.PORT || 3000
 
 // Routes
 // This router makes it so all posts in the posts.js file start with the url /posts
+// http://localhost:3000/posts
 app.use('/posts', postRoutes)
 
 
