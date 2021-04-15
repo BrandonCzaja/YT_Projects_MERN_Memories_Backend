@@ -1,8 +1,8 @@
 // Usually in the backend the syntax is const express = require('express') but to use the modern import syntax I had to add the ' "type": "module" ' line to the package.json file. That is all I had to do.
 import express from "express";
 import bodyParser from "body-parser";
-import cors from "cors";
 import mongoose from "mongoose";
+import cors from "cors";
 import postRoutes from "./routes/posts.js";
 
 const app = express();
