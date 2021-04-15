@@ -20,7 +20,7 @@ app.use(cors());
 app.use("/posts", postRoutes);
 
 // MongoDB Connection String - Will be added to .env file later
-const CONNECTION_URL = "mongodb+srv://YouTube_Projects:SSCotting31@cluster0.cyspk.gcp.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
+const CONNECTION_URL = "mongodb+srv://BrandonC:SSPlymouth31@cluster0.cyspk.gcp.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
 // Connect app to database
 mongoose
 	.connect(CONNECTION_URL, { useNewUrlParser: true, useUnifiedTopology: true })
